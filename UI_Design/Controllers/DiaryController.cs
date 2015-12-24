@@ -33,17 +33,11 @@ namespace UI_Design.Controllers
         public ActionResult RitaDiarySidebar()
         {
             ViewBag.Message = "Rita's Diary.";
-            return View();
-        }
-
-        public ActionResult ZyraMaryDiarySidebar()
-        {
-            ViewBag.Message = "Add new cat.";
 
             return View();
         }
 
-        public ActionResult NewDiary()
+        public ActionResult AddCat()
         {
             ViewBag.Message = "Add new cat.";
 

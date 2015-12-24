@@ -173,8 +173,6 @@
     <Content Include="Views\Diary\DashBoard.cshtml" />
     <Content Include="Views\Diary\RitaDiarySidebar.cshtml" />
     <Content Include="Views\Home\AddCat.cshtml" />
-    <Content Include="Views\Diary\ZyraMaryDiarySidebar.cshtml" />
-    <Content Include="Views\Diary\NewDiary.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

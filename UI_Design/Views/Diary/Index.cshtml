@@ -8,44 +8,34 @@
 <div class="row" style="margin-top:50px">
 
     <div class="col-md-3">
+
         <section id="side">
             <div class="list-group">
-                <a href="http://localhost:18479/Diary/NewDiary" class="btn btn-primary  btn-block">
+                <a href="#" class="btn btn-danger  btn-block">
                     <span class=" glyphicon glyphicon-plus ">&nbsp;</span>
                     Create new diary
                 </a>
             </div>
 
-            <div class="panel panel-primary">
+            <div class="panel panel-danger">
                 <div class="panel-heading">
                     <h3 class="panel-title">Cat's diary</h3>
                 </div>
                 <div class="panel-body">
 
-                    <a href="http://localhost:18479/Diary/RitaDiarySidebar" id="rita" class="list-group-item active2 "> Rita</a>
-                    <a href="http://localhost:18479/Diary/ZyraMaryDiarySidebar" id="zyramary" class="list-group-item active2 "> Zyra & Mary</a>
+                    <a href="http://localhost:18479/Diary/RitaDiarySidebar" id="ritaSB" class="list-group-item active2 "> Rita</a>
+                    <a href="http://localhost:18479/Diary/DashBoard" id="dash" class="list-group-item active2 "> Zyra & Mary</a>
                 </div>
             </div>
+
+
         </section>
 
-
         <script>
             $(document).ready(function () {
-                $('#rita').click(function (e) {
+                $('#ritaSB').click(function (e) {
                     e.preventDefault();
                     $("#side").load($(this).attr('href'));
-                    $("#middle").load("http://localhost:18479/Diary/DashBoard");
-
-                });
-            });
-        </script>
-
-        <script>
-            $(document).ready(function () {
-                $('#zyramary').click(function (e) {
-                    e.preventDefault();
-                    $("#side").load($(this).attr('href'));
-                    $("#middle").load("http://localhost:18479/Diary/DashBoard");
 
                 });
             });
@@ -53,11 +43,44 @@
 
     </div>
 
+    <div class="col-md-6">
 
-    <div class="col-md-9">
-        <section id="middle">
-        </section>
+        <section id="middle"></section>
+
+        <script>
+            $(document).ready(function () {
+                $('#dash').click(function (e) {
+                    e.preventDefault();
+                    $("#middle").load($(this).attr('href'));
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+                $('#ritaD').click(function (e) {
+                    e.preventDefault();
+                    $("#dynamic").load($(this).attr('href'));
+                });
+            });
+        </script>
+
+
+
     </div>
 
+    <div class="col-md-3 ">
+        <div class="list-group">
+            <a href="#" class="list-group-item active" data-toggle="collapse" data-target="#st" data-parent="#menu">Cat diary <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
+            <a class="list-group-item">
+                Add new
+                <span class="glyphicon glyphicon-plus-sign pull-right"></span>
+            </a>
+            <div id="st" class="sublinks collapse">
+                <a class="list-group-item "><span class="glyphicon glyphicon-chevron-right"></span> Alease & Brandy</a>
+                <a class="list-group-item "><span class="glyphicon glyphicon-chevron-right"></span> Rita</a>
+            </div>
+        </div>
+    </div>
 
 </div>
