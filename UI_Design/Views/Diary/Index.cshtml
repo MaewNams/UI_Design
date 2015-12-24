@@ -10,13 +10,13 @@
     <div class="col-md-3">
         <section id="side">
             <div class="list-group">
-                <a href="http://localhost:18479/Diary/Newdiay" id="newDiary" class="btn btn-danger  btn-block">
+                <a href="http://localhost:18479/Diary/NewDiary" class="btn btn-primary  btn-block">
                     <span class=" glyphicon glyphicon-plus ">&nbsp;</span>
                     Create new diary
                 </a>
             </div>
 
-            <div class="panel panel-danger">
+            <div class="panel panel-primary">
                 <div class="panel-heading">
                     <h3 class="panel-title">Cat's diary</h3>
                 </div>
@@ -28,15 +28,6 @@
             </div>
         </section>
 
-        <script>
-            $(document).ready(function () {
-                $('#newDiary').click(function (e) {
-                    e.preventDefault();
-                    $("#middle").load("http://localhost:18479/Diary/NewDiary");
-
-                });
-            });
-        </script>
 
         <script>
             $(document).ready(function () {
@@ -63,24 +54,10 @@
     </div>
 
 
-    <div class="col-md-6">
+    <div class="col-md-9">
         <section id="middle">
         </section>
     </div>
 
-
-    <div class="col-md-3 ">
-        <div class="list-group">
-            <a href="#" class="list-group-item active" data-toggle="collapse" data-target="#st" data-parent="#menu">Cat diary <span class="glyphicon glyphicon-chevron-down pull-right"></span></a>
-            <a href="#" class="list-group-item">
-                Add new
-                <span class="glyphicon glyphicon-plus-sign pull-right"></span>
-            </a>
-            <div id="st" class="sublinks collapse">
-                <a class="list-group-item "><span class="glyphicon glyphicon-chevron-right"></span> Alease & Brandy</a>
-                <a class="list-group-item "><span class="glyphicon glyphicon-chevron-right"></span> Rita</a>
-            </div>
-        </div>
-    </div>
 
 </div>
