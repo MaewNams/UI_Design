@@ -2008,18 +2008,9 @@ pre {
     padding-right: 15px;
 }
 
-.container.newD{
-    background-color:aqua;
-    margin-top: 0px;
-    margin-right: 5px;
-    margin-left: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
 @media (min-width: 768px) {
     .container {
-        padding-left: 250px;
+        width: 750px;
         }
 }
 
