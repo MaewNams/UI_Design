@@ -175,6 +175,7 @@
     <Content Include="Views\Home\AddCat.cshtml" />
     <Content Include="Views\Diary\ZyraMaryDiarySidebar.cshtml" />
     <Content Include="Views\Diary\NewDiary.cshtml" />
+    <Content Include="Views\Diary\TestDiary.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

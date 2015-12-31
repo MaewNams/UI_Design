@@ -49,5 +49,12 @@ namespace UI_Design.Controllers
 
             return View();
         }
+
+        public ActionResult TestDiary()
+        {
+            ViewBag.Message = "Add new cat.";
+
+            return View();
+        }
     }
 }
